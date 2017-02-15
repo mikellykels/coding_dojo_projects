@@ -1,0 +1,40 @@
+*{
+    margin: 0px auto;
+    font-family: Arial, sans-serif;
+}
+
+#container{
+    background-color: #D5AF8A;
+    text-align: center;
+    padding: 25px;
+}
+
+#content{
+    width: 600px;
+    display: inline-block;
+}
+
+.blue{
+    width: 100px;
+    height: 100px;
+    background-color: #AED6F1;
+    display: inline-block;
+    border: 2px solid black;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.red{
+    width: 100px;
+    height: 100px;
+    background-color: #DF6F85;
+    display: inline-block;
+    border: 2px solid black;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}

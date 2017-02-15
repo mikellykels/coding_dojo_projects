@@ -1,0 +1,35 @@
+*{
+    margin: 0px auto;
+    font-family: Arial, sans-serif;
+}
+
+#container{
+    width: 970px;
+}
+
+h2, h4, p{
+    text-align: center;
+}
+
+    p:first-letter{
+        text-transform: uppercase;
+    }
+
+    p{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+#pokemon{
+    width: 800px;
+}
+
+#display_info{
+    display: block;
+    border: 3px solid black;
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    margin-right: -150px;
+    margin-top: -3000px;
+}
