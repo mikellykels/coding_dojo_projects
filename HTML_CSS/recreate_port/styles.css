@@ -1,0 +1,135 @@
+*{
+    margin: 0px auto;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+}
+
+#container{
+    width: 970px;
+    height: auto;
+    background: #573540; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(white, #573540); /* Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, #573540); /* For Opera 11.6 to 12.0 */
+    background: -moz-linear-gradient(white, #573540); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, #573540); /* Standard syntax (must be last) */
+}
+
+#header{
+    background: silver;
+    padding: 20px;
+    height: 50px;
+    background: silver;
+    background: -webkit-linear-gradient(white, silver);
+    background: -o-linear-gradient(white, silver);
+    background: -moz-linear-gradient(white, silver);
+    background: linear-gradient(white, silver);
+}
+    h1{
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    #header h3{
+        text-align: right;
+        margin-top: -30px;
+    }
+
+#about h3{
+    background: #838081;
+    background: -webkit-linear-gradient(white, #838081);
+    background: -o-linear-gradient(white, #838081);
+    background: -moz-linear-gradient(white, #838081);
+    background: linear-gradient(white, #838081);
+    width: 540px;
+    padding: 10px;
+    margin-top: -255px;
+    margin-left: 390px;
+    color: white;
+}
+
+    #about p{
+        width: 540px;
+        background: silver;
+        padding: 10px;
+        margin-left: 390px;
+        font-size: 14px;
+    }
+
+    #about a{
+        width: 540px;
+        background: silver;
+        margin-left: 390px;
+        display: block;
+        padding: 10px 10px 14px 10px;
+        color: black;
+    }
+
+    #about img{
+        width: 350px;
+        border: 3px solid silver;
+        margin: 15px;
+    }
+
+#la_mode, #family_contacts, #five_eleven{
+    display: inline-block;
+    width: 294px;
+    background: silver;
+    margin: 20px 0px 20px 20px;
+    vertical-align: top;
+}
+
+    #la_mode h3, #family_contacts h3, #five_eleven h3{
+        padding: 10px;
+        background: #838081;
+        background: -webkit-linear-gradient(white, #838081);
+        background: -o-linear-gradient(white, #838081);
+        background: -moz-linear-gradient(white, #838081);
+        background: linear-gradient(white, #838081);
+        color: white;
+    }
+
+    .proj_img{
+        width: 250px;
+    }
+
+    #la_mode p, #family_contacts p, #five_eleven p{
+        font-size: 14px;
+        padding: 10px;
+        margin-bottom: 50px;
+    }
+
+    .tech_img{
+        width: 35px;
+        padding: 10px 7px 10px 10px;
+    }
+
+    button{
+        padding: 5px;
+        border-radius: 5px;
+        background: green;
+        color: white;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+#footer{
+    width: 970px;
+    height: auto;
+    background: white;
+}
+
+    .foot_img{
+        width: 30px;
+        margin-left: 110px;
+    }
+
+    #footer p{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    #footer a{
+        color: black;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
