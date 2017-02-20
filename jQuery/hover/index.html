@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hover In/Out</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+                $('img').hover(function(){
+                    var orig = $(this).attr('src');
+                    var swap = $(this).attr('data-alt-src');
+                    $(this).attr('src', swap);
+                    $(this).attr('data-alt-src', orig);
+                    return false;
+                });
+
+            });
+
+        </script>
+    </head>
+    <body>
+        <div id="container">
+
+            <div id="images">
+                <img src="images/1a.jpg" data-alt-src="images/1b.jpg">
+                <img src="images/2a.jpg" data-alt-src="images/2b.jpg">
+                <img src="images/3a.jpg" data-alt-src="images/3b.jpg">
+                <img src="images/4a.jpg" data-alt-src="images/4b.jpg">
+
+            </div><!--end images-->
+
+        </div><!--end container-->
+    </body>
+</html>
