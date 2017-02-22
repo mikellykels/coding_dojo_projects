@@ -76,8 +76,8 @@ users = {
 }
 
 def names2():
-    count = 0
     for key, data in users.items():
+        count = 0
         print key
         for value in data:
             count += 1
