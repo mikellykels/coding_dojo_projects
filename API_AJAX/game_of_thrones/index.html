@@ -8,8 +8,27 @@
         <script type="text/javascript">
             $(document).ready(function(){
 
+                var house_names = ["House Targaryen of King's Landing", "House Stark of Winterfell", "House Lannister of Casterly Rock", "House Baratheon of Storm's End"];
 
+                var house_images = ["targaryen.jpg", "stark.jpg", "lannister.jpg", "baratheon.png"];
+                //
+                for (var i = 0; i < house_names.length; i++) {
+                    $('#got_houses').append('<img id="'+house_names[i]+'"src="images/'+house_images[i]+'">');
+                }
 
+                $('#got_houses').on('click', 'img', function(){
+                    var house_names = $(this).attr('id');
+                    $.get('https://anapioficeandfire.com/api/houses/?name=' + house_names, function(houses){
+                        for (var i = 0; i < houses.length; i++) {
+                            var html_str = "";
+                            html_str += "<h2>" + houses[i].name + "</h2>";
+                            html_str += "<h4>Words: " + houses[i].words + "</h4>";
+                            html_str += "<h4>Coat of Arms: " + houses[i].coatOfArms + "</h4>";
+                            html_str += "<h4>Titles: " + houses[i].titles + "</h4>";
+                            $('#house_details').html(html_str);
+                        }
+                    }, "json");
+                });
             });
 
         </script>
@@ -18,12 +37,12 @@
 
         <div id="container">
 
-            <div id="houses">
-
+            <div id="got_houses">
             </div><!--end houses-->
 
-            <div id="house_details">
+            <h1>Click Image for House Details</h1>
 
+            <div id="house_details">
             </div><!--end house_details-->
 
         </div><!--end container-->
